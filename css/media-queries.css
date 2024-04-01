@@ -1,0 +1,36 @@
+/* SCREEN SM */
+@media (max-width: 576px) {
+  .grid .row {
+    flex-flow: column nowrap;
+  }
+
+  .grid [class*="col"] {
+    flex: 0 0 100% !important;
+    margin-left: 0px !important;
+  }
+
+  .grid .hidden-sm {
+    display: none;
+  }
+}
+
+/* SCREEN MD */
+@media (min-width: 577px) and (max-width: 768px) {
+  .grid .hidden-md {
+    display: none;
+  }
+}
+
+/* SCREEN LG */
+@media (min-width: 769px) and (max-width: 992px) {
+  .grid .hidden-lg {
+    display: none;
+  }
+}
+
+/* SCREEN XL */
+@media (min-width: 993px) {
+  .grid .hidden-xl {
+    display: none;
+  }
+}

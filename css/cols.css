@@ -1,0 +1,98 @@
+.grid [class*="col"] {
+  flex: 1 1 calc(100% / 12);
+  flex-grow: 0;
+}
+
+.grid .col-1 {
+  flex-basis: var(--one-column);
+}
+
+.grid .col-2 {
+  flex-basis: calc(var(--one-column) * 2);
+}
+
+.grid .col-3 {
+  flex-basis: calc(var(--one-column) * 3);
+}
+
+.grid .col-4 {
+  flex-basis: calc(var(--one-column) * 4);
+}
+
+.grid .col-5 {
+  flex-basis: calc(var(--one-column) * 5);
+}
+
+.grid .col-6 {
+  flex-basis: calc(var(--one-column) * 6);
+}
+
+.grid .col-7 {
+  flex-basis: calc(var(--one-column) * 7);
+}
+
+.grid .col-8 {
+  flex-basis: calc(var(--one-column) * 8);
+}
+
+.grid .col-9 {
+  flex-basis: calc(var(--one-column) * 9);
+}
+
+.grid .col-10 {
+  flex-basis: calc(var(--one-column) * 10);
+}
+
+.grid .col-11 {
+  flex-basis: calc(var(--one-column) * 11);
+}
+
+.grid .col-12 {
+  flex-basis: calc(var(--one-column) * 12);
+}
+
+/* OFFSET */
+
+.grid .col-offset-1 {
+  margin-left: var(--one-column);
+}
+
+.grid .col-offset-2 {
+  margin-left: calc(var(--one-column) * 2);
+}
+
+.grid .col-offset-3 {
+  margin-left: calc(var(--one-column) * 3);
+}
+
+.grid .col-offset-4 {
+  margin-left: calc(var(--one-column) * 4);
+}
+
+.grid .col-offset-5 {
+  margin-left: calc(var(--one-column) * 5);
+}
+
+.grid .col-offset-6 {
+  margin-left: calc(var(--one-column) * 6);
+}
+
+.grid .col-offset-7 {
+  margin-left: calc(var(--one-column) * 7);
+}
+
+.grid .col-offset-8 {
+  margin-left: calc(var(--one-column) * 8);
+}
+
+.grid .col-offset-9 {
+  margin-left: calc(var(--one-column) * 9);
+}
+
+.grid .col-offset-10 {
+  margin-left: calc(var(--one-column) * 10);
+}
+
+.grid .col-offset-11 {
+  margin-left: calc(var(--one-column) * 11);
+}

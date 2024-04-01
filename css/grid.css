@@ -1,0 +1,41 @@
+.grid .row {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-x: hidden;
+  min-width: 500px;
+  width: 100vw;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .grid .row {
+    flex-flow: row wrap;
+  }
+
+  .grid [class*="col"] {
+    flex-basis: 50vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .grid .row {
+    flex-flow: row wrap;
+  }
+
+  .grid [class*="col"] {
+    flex-basis: calc(100% / 4);
+  }
+}
+
+@media (min-width: 993px) {
+  .grid .row {
+    flex-flow: row wrap;
+  }
+
+  .grid [class*="col"] {
+    flex-basis: calc(100% / 12);
+  }
+}
+
+.wrapped {
+  flex: 1 1 auto;
+}
