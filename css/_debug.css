@@ -1,118 +1,82 @@
-button.debug {
-  position: absolute;
-  content: "DEBUG MODE";
-  bottom: 20px;
-  left: 20px;
-  box-shadow: 1px 1px 5px gray;
-  padding: 10px;
-  border-radius: 100px;
-  background-color: red;
-  border: 4px solid yellow;
-  cursor: pointer;
-  transition: filter 0.05s linear, box-shadow 0.05s linear,
-    transform 0.05s linear;
-  filter: grayscale(80%);
-}
-
-button.debug:hover {
-  filter: grayscale(0);
-  box-shadow: 3px 3px 8px #7d7d7d, 0 0 8px #7d7d7d;
-  transform: translate(-0.5px, -0.5px);
-}
-
-button.debug:active {
-  background-color: black;
-  border-color: purple;
-}
-
-button.debug img {
-  width: 24px;
-  height: 20px;
-  object-fit: contain;
-}
-
-.grid.debug {
+body {
   font-family: sans-serif;
-  outline: 3px dotted black;
+  margin: 0;
+  user-select: none;
+  overflow-x: hidden;
 }
 
-.grid.debug::after {
-  display: block;
+.screen-info {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
-  content: "DEBUG MODE";
-  bottom: 20px;
-  right: 20px;
+  top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: #523b43;
   font-weight: bold;
-  box-shadow: 1px 1px 5px gray;
-  padding: 8px;
-  border-radius: 3px;
-  background-color: red;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 orange;
+  display: grid;
+  place-items: center;
+}
+
+.screen-info::after {
+  display: block;
+  box-shadow: 1px 1px 4px black, -1px 1px 4px #999, 1px -1px 4px #999,
+    -1px -1px 4px #999;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #ffebd2;
+  padding: 20px;
+  width: 200px;
+  content: attr(data-screen);
+}
+
+.screen-info.displayed {
+  animation: showIt 0.8s linear 0.2s;
+}
+
+header,
+section,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+header,
+footer {
+  background-color: #6a0000;
   color: white;
-  border: 4px solid yellow;
 }
 
-.grid.debug [class*="col"] {
-  outline: 2px dashed black;
-  background: #bb6e6e;
-  color: #670101;
+section:nth-of-type(1) {
+  background-color: #29aa4e;
+  color: white;
 }
 
-.grid.debug .col-1 {
-  background-color: #ff00008e;
-  color: #d8f6f6;
+section:nth-of-type(2) {
+  background-color: #42a4bf;
+  color: white;
 }
 
-.grid.debug .col-2 {
-  background-color: #40912ecc;
-  color: #e7e8e8;
+section:nth-of-type(3) {
+  background-color: #eebf27;
+  color: white;
 }
 
-.grid.debug .col-3 {
-  background-color: #aeabf3cc;
-  color: #a52a2a;
-}
-
-.grid.debug .col-4 {
-  background-color: #998faacc;
-  color: #052900;
-}
-
-.grid.debug .col-5 {
-  background-color: #8f5300e2;
-  color: #d5d7ba;
-}
-
-.grid.debug .col-6 {
-  background-color: #224d39cc;
-  color: #caffd8;
-}
-
-.grid.debug .col-7 {
-  background-color: #60d7c9cc;
-  color: #63328b;
-}
-
-.grid.debug .col-8 {
-  background-color: #02002dcc;
-  color: #f9dada;
-}
-
-.grid.debug .col-9 {
-  background-color: #006217cc;
-  color: #fead34a2;
-}
-
-.grid.debug .col-10 {
-  background-color: #eda9f3cc;
-  color: #3f3f3f;
-}
-
-.grid.debug .col-11 {
-  background-color: #06007ccc;
-  color: #c7e3ba;
-}
-
-.grid.debug .col-12 {
-  background-color: #e6f3abec;
-  color: #670d0d;
+@keyframes showIt {
+  10% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
 }

@@ -1,0 +1,17 @@
+section:nth-of-type(1),
+section:nth-of-type(2),
+section:nth-of-type(3) {
+  flex: 1 1 130px;
+}
+
+section:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+section:nth-of-type(1)::after {
+  content: "\00a0- à gauche en xl";
+}
+
+section:nth-of-type(2)::after {
+  content: "\00a0- centré en xl";
+}
