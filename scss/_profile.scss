@@ -1,0 +1,29 @@
+.side-content#profile {
+  font-size: 0.9rem;
+
+  .photo-profile {
+    min-width: 150px;
+  }
+
+  .description:first-of-type > p {
+    text-align: justify;
+  }
+
+  ul li {
+    color: inherit;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    &:hover {
+      color: lighten($text-main, 30%);
+      background-color: #fff;
+    }
+  }
+
+  .technos img {
+    transform: scale(0.8);
+  }
+}

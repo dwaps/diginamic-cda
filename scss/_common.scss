@@ -1,0 +1,87 @@
+body {
+  overflow-x: hidden;
+}
+
+.main-content {
+  p,
+  ul:not([class*="navbar"]) {
+    text-shadow: 1px 1px 2px white;
+  }
+}
+
+.side-content {
+  position: fixed;
+  width: 25vw;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: $primary;
+  color: $warning;
+  @include hideScrollbar;
+}
+
+section {
+  h2 {
+    transition: all 0.2s linear;
+    &:hover {
+      text-shadow: 1px 1px 4px #ccc8c8, -1px 1px 10px #e3e3e3,
+        1px -1px 4px #e3e3e3, -1px -1px 4px #e3e3e3;
+    }
+  }
+
+  .description {
+    h3 {
+      font-size: 1rem !important;
+      text-align: center;
+      border-bottom: 5px solid #f9aa2d;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    p.infos,
+    ul {
+      font: {
+        size: 0.85rem;
+        weight: 600;
+      }
+      & ul {
+        padding-left: 13px;
+      }
+      list-style: none;
+      li {
+        color: $text-lighter;
+        padding: 0 !important;
+        strong {
+          font-weight: 700;
+        }
+        &::before {
+          display: inline-block;
+          position: relative;
+          left: -4px;
+          top: -1px;
+          content: "";
+          background: no-repeat url("../images/bullet.png");
+          background-size: contain;
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 90px;
+  }
+}
+
+.bt-back-to-top {
+  @include floating-button;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  transition: all 500ms linear;
+}

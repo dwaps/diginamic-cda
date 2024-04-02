@@ -1,0 +1,14 @@
+@import "./mixins";
+@import "./variables";
+
+@import "./media-queries";
+@import "./common";
+@import "./profile";
+@import "./selection";
+@import "./contact-form";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// PROPOSER UNE LOUPE POUR LE TEXTE
+// PROPOSER UN CONTRASTE ELEVE
+// BUTTON BACK TO TOP --> REINIT URL !!!

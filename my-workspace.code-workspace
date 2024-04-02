@@ -1,0 +1,29 @@
+{
+  "folders": [
+	{
+		"name": "DIG-CV",
+		"path": "."
+	},
+	{
+		"name": "DIG-CSS",
+		"path": "G:/Mon Drive/DWAPS/Formation Diginamic CDA Java Angular/cours/3--HTML5-CSS3/5--css-douenel"
+	},
+	{
+		"name": "DIG-MEMOPUS",
+		"path": "G:/Mon Drive/DWAPS/Formation Diginamic CDA Java Angular/cours/3--HTML5-CSS3/4--momepus"
+	},
+	{
+		"name": "CAMERA-IP",
+		"path": "../../Documents/projets-perso/projets-portfolio/camera-ip"
+	},
+	{
+		"name": "GSAP",
+		"path": "../../Documents/projets-perso/gsap-tests"
+	},
+	{
+		"name": "PORTFOLIO",
+		"path": "../../Documents/projets-perso/dwaps.fr"
+	}
+],
+  "settings": {}
+}

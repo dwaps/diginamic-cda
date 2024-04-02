@@ -1,0 +1,5 @@
+
+.icon-back-to-top:before { content: '\e800'; } /* '' */
+.icon-zoom-in:before { content: '\e801'; } /* '' */
+.icon-zoom-out:before { content: '\e802'; } /* '' */
+.icon-copy:before { content: '\f0c5'; } /* '' */

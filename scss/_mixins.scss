@@ -1,0 +1,35 @@
+@mixin floating-button($position: "absolute") {
+  position: $position;
+  background: $primary;
+  cursor: pointer;
+  color: white;
+  z-index: 99999999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: $box-shadow;
+
+  &.showIt {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@mixin form-control-focus() {
+  &:focus {
+    border-color: lighten($text-main, 50%);
+    background-color: lighten($text-main, 50%);
+    box-shadow: 0 0 0 0.25rem $text-main;
+  }
+}
+
+@mixin hideScrollbar() {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

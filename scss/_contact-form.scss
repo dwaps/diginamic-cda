@@ -1,0 +1,12 @@
+form {
+  user-select: none;
+  transform: scale(0.9);
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  @include form-control-focus;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="back-to-top" unicode="&#xe800;" d="M939 107l-92-92q-11-10-26-10t-25 10l-296 297-296-297q-11-10-25-10t-25 10l-93 92q-11 11-11 26t11 25l414 414q11 10 25 10t25-10l414-414q11-11 11-25t-11-26z" horiz-adv-x="1000" />
+
+<glyph glyph-name="zoom-in" unicode="&#xe801;" d="M495 450q10 0 18-8t8-18-8-18-18-8l-105 0 0-104q0-10-7-18t-18-8-18 8-8 18l0 104-104 0q-10 0-18 8t-8 18 8 18 18 8l104 0 0 104q0 10 8 18t18 8 18-8 7-18l0-104 105 0z m333-259q47-47 47-115t-47-115-115-49q-62 0-110 42l-125 124q-60-19-113-19-151 0-258 107t-107 258 107 257 258 107 258-107 106-257q0-54-19-114z m-204 58q-34-51-85-85l131-130q19-16 43-16 25 0 41 17t17 41q0 27-17 42z m-520 175q0-108 77-185t184-76 184 76 76 185-76 184-184 76-184-76-77-184z" horiz-adv-x="875" />
+
+<glyph glyph-name="zoom-out" unicode="&#xe802;" d="M495 398l-260 0q-10 0-18 8t-8 18 8 18 18 8l260 0q10 0 18-8t8-18-8-18-18-8z m333-207q47-47 47-115t-47-115-115-49q-62 0-110 42l-125 124q-60-19-113-19-151 0-258 107t-107 258 107 257 258 107 258-107 106-257q0-59-19-114z m-204 58q-34-51-85-85l131-130q19-16 43-16 25 0 41 17t17 41q0 27-17 42z m-520 175q0-108 77-185t184-76 184 76 76 185-76 184-184 76-184-76-77-184z" horiz-adv-x="875" />
+
+<glyph glyph-name="copy" unicode="&#xf0c5;" d="M946 636q23 0 38-16t16-38v-678q0-23-16-38t-38-16h-535q-23 0-38 16t-16 38v160h-303q-23 0-38 16t-16 38v375q0 22 11 49t27 42l228 228q15 16 42 27t49 11h232q23 0 38-16t16-38v-183q38 23 71 23h232z m-303-119l-167-167h167v167z m-357 214l-167-167h167v167z m109-361l176 176v233h-214v-233q0-22-15-37t-38-16h-233v-357h286v143q0 22 11 49t27 42z m534-449v643h-215v-232q0-22-15-38t-38-15h-232v-358h500z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

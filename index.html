@@ -3,37 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/*" />
     <title>CV Michael CORNILLON</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./images/fontello/css/fontello.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./index.js" defer></script>
   </head>
-  <body>
-    <header>
-      <h1>Michael Cornillon</h1>
-      <nav role="menu" class="main-menu">
-        <ul>
-          <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#formations">Formations</a></li>
-          <li><a href="#profil">Profil</a></li>
-          <li><a href="#contact">Me contacter</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+
+  <body class="bg-warning">
+    <!-- BTN TO TOP -->
+    <div class="bt-back-to-top">
+      <i class="icon-back-to-top"></i>
+    </div>
+    <!-- BTN TO COPY -->
+    <div class="bt-copy-selection">
+      <i class="icon-copy"></i>
+    </div>
+    <!-- BTN ZOOM IN -->
+    <div class="bt-zoom-in">
+      <i class="icon-zoom-in"></i>
+    </div>
+
+    <!-- START OF CV -->
+    <main class="container-fluid p-0">
       <section
         role="contentinfo"
         aria-label="Partie principale du CV"
-        class="main-content"
+        class="main-content col-md-9 offset-md-3"
       >
-        <h2>Présentation</h2>
-        <p>
-          Dans le cadre de ma formation Concepteur Développeur d'Applications
-          Java Full stack, je suis à la recherche d'une alternance à partir du
-          19 MARS 2024.
-        </p>
+        <header class="container-fluid">
+          <h1 class="text-center my-3">Michael Cornillon</h1>
+          <nav role="menu" class="main-menu navbar navbar-expand-md">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler m-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                id="mainMenu"
+                class="collapse navbar-collapse justify-content-center"
+              >
+                <ul class="navbar-nav bg-dark navbar-dark shadow rounded p-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#experiences">Experiences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#formations">Formations</a>
+                  </li>
+                  <li class="nav-item d-md-none">
+                    <a class="nav-link" href="#profile">Profil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Me contacter</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="d-flex flex-column">
+          <h2 class="text-center text-primary my-4 text-primary">
+            Présentation
+          </h2>
+          <p class="text-center mx-5 mb-5 w-50 align-self-center">
+            Dans le cadre de ma formation Concepteur Développeur d'Applications
+            Java Full stack, je suis à la recherche d'une alternance à partir du
+            19 MARS 2024.
+          </p>
+        </div>
 
         <section id="experiences">
-          <h2>EXPERIENCES PROFESSIONNELLES</h2>
+          <h2 class="text-center text-primary mb-4">
+            EXPERIENCES PROFESSIONNELLES
+          </h2>
 
-          <article class="description">
+          <article class="description card shadow-sm p-3 m-5">
             <h3>
               PROJETS - DIGINAMIC - CONCEPTEUR DEVELOPPEUR D'APPLICATIONS JAVA
               FULL STACK
@@ -46,7 +103,7 @@
             </ul>
           </article>
 
-          <article class="description">
+          <article class="description card shadow-sm p-3 m-5">
             <h3>FORMATEUR DE PARTICULIERS - SUPERPROF</h3>
             <p class="infos">DWAPS | 2017-2024</p>
             <ul>
@@ -61,7 +118,7 @@
             </ul>
           </article>
 
-          <article class="description">
+          <article class="description card shadow-sm p-3 m-5">
             <h3>FORMATEUR JAVASCRIPT</h3>
             <p class="infos">DWAPS | 2015-2024</p>
             <ul>
@@ -78,7 +135,7 @@
             </ul>
           </article>
 
-          <article class="description">
+          <article class="description card shadow-sm p-3 m-5">
             <h3>DEVELOPPEUR WEB</h3>
             <p class="infos">DWAPS | 2017-2019</p>
             <ul>
@@ -103,114 +160,127 @@
 
         <!-- PARTIE FORMATIONS -->
         <section id="formations">
-          <h2>FORMATIONS</h2>
+          <h2 class="text-center text-primary mb-4">FORMATIONS</h2>
 
-          <h3>CONCEPTEUR DEVELOPPEUR D'APPLICATIONS TITRE RNCP 6 - BAC+3/4</h3>
-          <p class="infos">DIGINAMIC MONTPELLIER | RENTREE MARS 2024</p>
-          <ul>
-            <li>
-              Développer une application sécurisée :
-              <ul>
-                <li>
-                  Installer et configurer son environnement de travail en
-                  fonction du projet.
-                </li>
-                <li>Développer des interfaces utilisateur.</li>
-                <li>Développer des composants métier.</li>
-                <li>Contribuer à la gestion d'un projet informatique.</li>
-              </ul>
-            </li>
-            <li>
-              Concevoir et développer une application sécurisée organisée en
-              couches :
-              <ul>
-                <li>Analyser les besoins et maquetter une application.</li>
-                <li>Définir l'architecture logicielle d'une application.</li>
-                <li>
-                  Concevoir et mettre en place une base de données
-                  relationnelle.
-                </li>
-                <li>
-                  Développer des composants d'accès aux données SQL et NoSQL.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Préparer le déploiement d'une application sécurisée :
-              <ul>
-                <li>
-                  Préparer et exécuter les plans de tests d'une application.
-                </li>
-                <li>
-                  Préparer et documenter le déploiement d'une application.
-                </li>
-                <li>
-                  Contribuer à la mise en production dans une démarche DevOps.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong
-                >Environnement : HTML, CSS, Javascript, Bootstrap, Java, Spring,
-                NodeJS, Angular, UML, Maven, Docker, Git, Github...</strong
-              >
-            </li>
-          </ul>
+          <article class="description card shadow-sm p-3 m-5">
+            <h3>
+              CONCEPTEUR DEVELOPPEUR D'APPLICATIONS TITRE RNCP 6 - BAC+3/4
+            </h3>
+            <p class="infos">DIGINAMIC MONTPELLIER | RENTREE MARS 2024</p>
+            <ul>
+              <li>
+                Développer une application sécurisée :
+                <ul>
+                  <li>
+                    Installer et configurer son environnement de travail en
+                    fonction du projet.
+                  </li>
+                  <li>Développer des interfaces utilisateur.</li>
+                  <li>Développer des composants métier.</li>
+                  <li>Contribuer à la gestion d'un projet informatique.</li>
+                </ul>
+              </li>
+              <li>
+                Concevoir et développer une application sécurisée organisée en
+                couches :
+                <ul>
+                  <li>Analyser les besoins et maquetter une application.</li>
+                  <li>Définir l'architecture logicielle d'une application.</li>
+                  <li>
+                    Concevoir et mettre en place une base de données
+                    relationnelle.
+                  </li>
+                  <li>
+                    Développer des composants d'accès aux données SQL et NoSQL.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Préparer le déploiement d'une application sécurisée :
+                <ul>
+                  <li>
+                    Préparer et exécuter les plans de tests d'une application.
+                  </li>
+                  <li>
+                    Préparer et documenter le déploiement d'une application.
+                  </li>
+                  <li>
+                    Contribuer à la mise en production dans une démarche DevOps.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong
+                  >Environnement : HTML, CSS, Javascript, Bootstrap, Java,
+                  Spring, NodeJS, Angular, UML, Maven, Docker, Git,
+                  Github...</strong
+                >
+              </li>
+            </ul>
+          </article>
 
-          <h3>PROGRAMMEUR D’APP MOBILES, CP48</h3>
-          <p class="infos">CNAM | 2014-2015</p>
-          <ul>
-            <li>Programmation avec <strong>Java SE</strong></li>
-            <li>
-              Programmation avec le framework <strong>Android</strong>
-              <ul>
-                <li>
-                  Réalisation d’une application pour apprendre l’espagnol (code
-                  natif et intégration web via des WebViews)
-                </li>
+          <article class="description card shadow-sm p-3 m-5">
+            <h3>PROGRAMMEUR D’APP MOBILES, CP48</h3>
+            <p class="infos">CNAM | 2014-2015</p>
+            <ul>
+              <li>Programmation avec <strong>Java SE</strong></li>
+              <li>
+                Programmation avec le framework <strong>Android</strong>
+                <ul>
+                  <li>
+                    Réalisation d’une application pour apprendre l’espagnol
+                    (code natif et intégration web via des WebViews)
+                  </li>
 
-                <li>
-                  Réalisation d’une documentation technique et fonctionnelle
-                </li>
-              </ul>
-            </li>
-            <li>
-              Etude des principes et fonctionnement des
-              <strong>systèmes d’exploitation</strong> et du
-              <strong>réseau</strong>
-            </li>
-            <li>
-              Etude des <strong>BDD relationnelles</strong> et mises en œuvre
-              dans le cadre du projet de soutenance
-            </li>
-          </ul>
+                  <li>
+                    Réalisation d’une documentation technique et fonctionnelle
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Etude des principes et fonctionnement des
+                <strong>systèmes d’exploitation</strong> et du
+                <strong>réseau</strong>
+              </li>
+              <li>
+                Etude des <strong>BDD relationnelles</strong> et mises en œuvre
+                dans le cadre du projet de soutenance
+              </li>
+            </ul>
+          </article>
 
-          <h3>FORMATION PROGRAMMATION JAVA</h3>
-          <p class="infos">M2I FORMATION | AOÛT 2014</p>
-          <ul>
-            <li>
-              Formation pour découvrir le langage <strong>Java SE</strong>
-              <ul>
-                <li>
-                  Etude et mise en pratique des paradigmes procédurale et POO.
-                </li>
-                <li>Mise en œuvre de l'I/O: réseau et BDD MySQL.</li>
-              </ul>
-            </li>
-          </ul>
+          <article class="description card shadow-sm p-3 m-5">
+            <h3>FORMATION PROGRAMMATION JAVA</h3>
+            <p class="infos">M2I FORMATION | AOÛT 2014</p>
+            <ul>
+              <li>
+                Formation pour découvrir le langage <strong>Java SE</strong>
+                <ul>
+                  <li>
+                    Etude et mise en pratique des paradigmes procédurale et POO.
+                  </li>
+                  <li>Mise en œuvre de l'I/O: réseau et BDD MySQL.</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
         </section>
       </section>
 
       <section
-        id="profil"
+        id="profile"
         role="contentinfo"
         aria-label="Informations supplémentaires sur l'auteur du CV"
-        class="side-content"
+        class="side-content d-flex flex-column py-3 mb-xs-5"
       >
-        <img src="./images/mc-london.jpg" alt="Photo de profil" />
-        <article class="description">
-          <h2>PROFIL</h2>
-          <p>
+        <img
+          class="photo-profile img-fluid rounded align-self-center"
+          src="./images/mc-london.jpg"
+          alt="Photo de profil"
+        />
+        <article class="description p-1">
+          <h2 class="text-center my-4">PROFIL</h2>
+          <p class="px-2">
             Je prépare à la rentrée de Mars 2024 un Titre RNCP de Niveau 6
             "Concepteur Développeur d'Application Full stack filière Java" au
             sein de DIGINAMIC. Très motivé je recherche activement une
@@ -218,17 +288,24 @@
           </p>
         </article>
 
-        <article class="description">
-          <h2>COORDONNEES</h2>
-          <p><a href="tel:0651279211">06.51.27.92.11</a></p>
+        <article class="description p-1">
+          <h2 class="text-center mb-4">COORDONNEES</h2>
+          <p>
+            <a rel="noopener noreferrer nofollow external" href="tel:0651279211"
+              >06.51.27.92.11</a
+            >
+          </p>
           <p>
             <a
+              rel="noopener noreferrer nofollow external"
               href="mailto:ei.dwaps@gmail.com?subject=Michael,%20Je%20vous%20veux%20dans%20mon%20entreprise!%20%F0%9F%98%80&amp;body=Expliquez%20pourquoi%20en%20deux%20lignes..."
               >ei.dwaps@gmail.com</a
             >
           </p>
           <address>
             <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
               href="https://www.google.fr/maps/place/44%C2%B007'54.1%22N+2%C2%B034'10.4%22E/@44.1316937,1.9080807,9z/data=!4m4!3m3!8m2!3d44.13169!4d2.569551?entry=ttu"
             >
               <i>12120 Auriac-Lagast</i>
@@ -236,27 +313,39 @@
               <i>Permis B + véhiculé</i></a
             >
           </address>
-          <p class="socials">
-            <a href="https://github.com/dwaps" target="_blank"
-              ><img src="./images/logo-github.png" alt="Lien vers mon Github"
+          <p class="socials d-flex justify-content-center">
+            <a
+              rel="noopener noreferrer nofollow external"
+              href="https://github.com/dwaps"
+              target="_blank"
+              ><img
+                class="img-fluid rounded p-2"
+                src="./images/logo-github.png"
+                alt="Lien vers mon Github"
             /></a>
             <a
+              rel="noopener noreferrer nofollow external"
               href="https://www.linkedin.com/in/michael-cornillon-developpeur-formateur-java-angular/"
               target="_blank"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-linkedin.png"
                 alt="Lien vers mon LinkedIn"
             /></a>
-            <a href="https://dwaps.fr" target="_blank"
+            <a
+              rel="noopener noreferrer nofollow external"
+              href="https://dwaps.fr"
+              target="_blank"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-portfolio.png"
                 alt="Lien vers mon Portfolio"
             /></a>
           </p>
         </article>
 
-        <article class="description">
-          <h2>LANGUES</h2>
+        <article class="description p-1">
+          <h2 class="text-center mb-4">LANGUES</h2>
           <ul>
             <li>Anglais - B1</li>
             <li>Espagnol - B2</li>
@@ -264,70 +353,114 @@
           </ul>
         </article>
 
-        <article class="description">
-          <h2>COMPETENCES</h2>
-          <p class="technos">
-            <a target="_blank" href="https://fr.wikipedia.org/wiki/HTML5"
+        <article class="description p-1">
+          <h2 class="text-center mb-4">COMPETENCES</h2>
+          <p class="technos d-flex justify-content-center flex-wrap">
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://fr.wikipedia.org/wiki/HTML5"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-html.png"
                 alt="Lien vers description du HTML"
             /></a>
             <a
+              rel="noopener noreferrer nofollow external"
               target="_blank"
               href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-css.png"
                 alt="Lien vers description du CSS"
             /></a>
             <a
+              rel="noopener noreferrer nofollow external"
               target="_blank"
               href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-javascript.png"
                 alt="Lien vers description du JavaScript"
             /></a>
-            <a target="_blank" href="https://getbootstrap.com/"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://getbootstrap.com/"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-bootstrap.png"
                 alt="Lien vers le site de de Bootstrap"
             /></a>
-            <a target="_blank" href="https://angular.io/"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://angular.io/"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-angular.png"
                 alt="Lien vers le site de d'Angular"
             /></a>
-            <a target="_blank" href="https://www.mysql.com/fr/"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://www.mysql.com/fr/"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-mysql.png"
                 alt="Lien vers le site de de MySQL"
             /></a>
-            <a target="_blank" href="https://www.typescriptlang.org/"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://www.typescriptlang.org/"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-typescript.png"
                 alt="Lien vers le site de de TypeScript"
             /></a>
-            <a target="_blank" href="https://docs.oracle.com/en/java/"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://docs.oracle.com/en/java/"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-java.png"
                 alt="Lien vers le site de du Java"
             /></a>
-            <a target="_blank" href="https://spring.io/"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://spring.io/"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-spring.png"
                 alt="Lien vers le site de de Spring"
             /></a>
-            <a target="_blank" href="https://meanjs.org/docs.html"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://meanjs.org/docs.html"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-mean.png"
                 alt="Lien vers le site de de MEAN"
             /></a>
-            <a target="_blank" href="https://sass-lang.com/documentation/"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://sass-lang.com/documentation/"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-sass.png"
                 alt="Lien vers le site de de Sass"
             /></a>
-            <a target="_blank" href="https://fr.react.dev/"
+            <a
+              rel="noopener noreferrer nofollow external"
+              target="_blank"
+              href="https://fr.react.dev/"
               ><img
+                class="img-fluid rounded p-2"
                 src="./images/logo-react.png"
                 alt="Lien vers le site de de React"
             /></a>
@@ -335,48 +468,88 @@
         </article>
       </section>
 
-      <section id="contact">
-        <h2>Me contacter</h2>
-        <form action="." method="get">
+      <section
+        class="bg-dark text-light col-md-9 offset-md-3 py-2"
+        id="contact"
+      >
+        <h2 class="text-center mt-4">Me contacter</h2>
+        <form class="text-center p-3" action="." method="get">
           <fieldset>
-            <legend>Informations</legend>
-            <p>
-              Civilité:
-              <label for="civ-mr" aria-label="Saisir votre nom"
-                >M.<input
+            <legend class="text-center">Informations</legend>
+
+            <div class="d-flex mb-3 justify-content-center">
+              <div class="form-check me-3">
+                <input
                   checked
+                  class="form-check-input"
                   type="radio"
                   id="civ-mr"
                   name="civ"
                   value="mr"
-              /></label>
-              <label for="civ-ms" aria-label="Saisir votre nom"
-                >Mme<input type="radio" id="civ-ms" name="civ" value="ms"
-              /></label>
-            </p>
-            <label for="lastname" aria-label="Saisir votre nom">
-              Votre nom:
+                />
+                <label
+                  class="form-check-label"
+                  for="civ-mr"
+                  aria-label="Saisir votre nom"
+                  >M.</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="civ-ms"
+                  name="civ"
+                  value="ms"
+                />
+                <label
+                  class="form-check-label"
+                  for="civ-ms"
+                  aria-label="Saisir votre nom"
+                  >Mme</label
+                >
+              </div>
+            </div>
+
+            <div class="form-floating d-inline-flex mb-3">
               <input
+                class="form-control"
                 type="text"
                 id="lastname"
                 name="lastname"
                 maxlength="30"
                 placeholder="Votre nom"
               />
-            </label>
-            <label for="fistname" aria-label="Saisir votre prénom">
-              Votre prénom:
+              <label
+                class="form-label text-dark"
+                for="lastname"
+                aria-label="Saisir votre nom"
+              >
+                Votre nom
+              </label>
+            </div>
+
+            <div class="form-floating d-inline-flex mb-3">
               <input
+                class="form-control"
                 type="text"
-                id="fistname"
-                name="fistname"
+                id="firstname"
+                name="firstname"
                 maxlength="30"
                 placeholder="Votre prénom"
               />
-            </label>
-            <label for="email" aria-label="Saisir votre prénom">
-              Votre email:
+              <label
+                class="form-label text-dark"
+                for="firstname"
+                aria-label="Saisir votre prénom"
+              >
+                Votre prénom
+              </label>
+            </div>
+
+            <div class="form-floating d-inline-flex mb-3">
               <input
+                class="form-control"
                 required
                 pattern="^\w+(\.\w+)*@\w+(-\w+)?\.\w{2,5}$"
                 type="email"
@@ -384,13 +557,22 @@
                 name="email"
                 placeholder="Votre email"
               />
-            </label>
+              <label
+                class="form-label text-dark"
+                for="email"
+                aria-label="Saisir votre prénom"
+              >
+                Votre email
+              </label>
+            </div>
           </fieldset>
+
           <fieldset>
             <legend>Message</legend>
-            <label for="subject" aria-label="Saisir votre prénom">
-              Objet:
+
+            <div class="form-floating d-inline-flex mb-3 col-3">
               <input
+                class="form-control"
                 required
                 type="text"
                 id="subject"
@@ -398,31 +580,58 @@
                 maxlength="30"
                 placeholder="Votre nom"
               />
-            </label>
-            <label for="message"
-              >Message:
+              <label
+                class="form-label text-dark"
+                for="subject"
+                aria-label="Saisir votre prénom"
+              >
+                Objet
+              </label>
+            </div>
+
+            <div class="form-floating d-inline-flex mb-3 col-10">
               <textarea
+                class="form-control"
                 name="message"
                 id="message"
                 placeholder="Votre message"
                 cols="30"
                 rows="10"
               ></textarea>
-            </label>
+              <label class="form-label text-dark" for="message">Message</label>
+            </div>
           </fieldset>
-          <label for="news" aria-label="Saisir votre prénom">
-            S'abonner à la newsletter:
-            <input type="checkbox" id="news" name="news" />
-          </label>
-          <button type="submit">Envoyer</button>
+
+          <div class="form-check d-inline-flex col-5">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="news"
+              name="news"
+            />
+            <label
+              class="form-check-label ps-3"
+              for="news"
+              aria-label="Saisir votre prénom"
+            >
+              S'abonner à la newsletter
+            </label>
+          </div>
+
+          <button class="btn btn-info rounded" type="submit">Envoyer</button>
         </form>
       </section>
     </main>
 
-    <footer>
-      <p>
-        <a href="https://dwaps.fr" target="_blank">Michael CORNILLON</a>
-      </p>
+    <footer class="text-center p-3 col-md-9 offset-md-3">
+      <small>
+        <a
+          rel="noopener noreferrer nofollow external"
+          href="https://dwaps.fr"
+          target="_blank"
+          >Michael CORNILLON</a
+        >
+      </small>
     </footer>
   </body>
 </html>

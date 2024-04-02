@@ -1,0 +1,32 @@
+::selection {
+  color: lighten($primary, 20%);
+  background-color: #fff;
+}
+
+.bt-copy-selection,
+.bt-zoom-in {
+  @include floating-button;
+
+  position: absolute;
+  padding: 10px;
+  top: 10px;
+  left: 90%;
+  transition: top 0.2s ease-out, left 0.2s ease-out, all 500ms linear;
+  &.copied {
+    background-color: green;
+    transform: scale(2);
+  }
+}
+
+.selected-text-zoomed {
+  cursor: none;
+  user-select: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  z-index: 999999999;
+  box-shadow: $box-shadow;
+  font-size: 2rem;
+  @include hideScrollbar;
+}
