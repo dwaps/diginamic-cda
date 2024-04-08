@@ -1,0 +1,5 @@
+
+.icon-edit:before { content: '\e800'; } /* '' */
+.icon-done:before { content: '\e801'; } /* '' */
+.icon-remove:before { content: '\e802'; } /* '' */
+.icon-save:before { content: '\e804'; } /* '' */

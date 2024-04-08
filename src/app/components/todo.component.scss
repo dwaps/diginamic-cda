@@ -1,0 +1,23 @@
+.todos {
+  display: grid;
+
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+
+    p.done {
+      text-decoration: line-through;
+      color: #9d9d9d;
+    }
+
+    p {
+      cursor: pointer;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
