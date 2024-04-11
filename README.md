@@ -42,4 +42,4 @@ A noter que le lien vers `<section id="profile">` n'est affiché que lorsque la 
 Scripts en JS vanilla:
 
 - Un bouton apparaît au besoin pour un retour en haut de page,
-- Lors de la sélection d'un texte, il est possible de copier la sélection via un bouton `copy` ou de zoomer sur la sélection via un bouton `zoom`.
+- Lors de la sélection d'un texte, il est possible de copier la sélection via un bouton `copy` ou de zoomer sur la sélection via un bouton `zoom`. Pour sortir du zoom, il suffit de taper sur la touche `echap` ou de faire un clic souris.
